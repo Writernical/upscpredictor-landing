@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPSC Predictor | Convert Current Affairs into Practice Questions</title>
@@ -11,24 +10,20 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://upscpredictor.in/">
     
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://upscpredictor.in/">
     <meta property="og:title" content="UPSC Predictor | Current Affairs → Practice Questions">
     <meta property="og:description" content="Turn any news headline into 10 UPSC-style questions. MCQs with traps + Mains with answer frameworks. Try 1 query FREE.">
     <meta property="og:image" content="https://upscpredictor.in/og-image.png">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://upscpredictor.in/">
     <meta name="twitter:title" content="UPSC Predictor | Current Affairs → Practice Questions">
     <meta name="twitter:description" content="Turn any news headline into 10 UPSC-style questions. MCQs with traps + Mains with answer frameworks.">
     <meta name="twitter:image" content="https://upscpredictor.in/og-image.png">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
 
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -43,637 +38,133 @@
             "price": "12",
             "priceCurrency": "INR",
             "description": "Per query pricing"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "150"
         }
     }
     </script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #1e293b; background: #ffffff; }
+
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none; }
+        .logo span { color: #3b82f6; }
+        .nav-cta { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); }
+
+        .hero { padding: 8rem 2rem 4rem; text-align: center; max-width: 900px; margin: 0 auto; }
+        .hero-badge { display: inline-block; background: #dbeafe; color: #1d4ed8; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
+        .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 1.5rem; color: #0f172a; }
+        .hero h1 span { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero p { font-size: 1.25rem; color: #64748b; max-width: 700px; margin: 0 auto 2rem; }
+        .hero-cta { display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 1rem 2.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4); }
+        .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5); }
+        .hero-sub { margin-top: 1rem; font-size: 0.9rem; color: #94a3b8; }
+
+        .problem { background: #fef2f2; padding: 4rem 2rem; }
+        .problem-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+        .problem h2 { font-size: 1.75rem; color: #991b1b; margin-bottom: 1.5rem; }
+        .problem p { font-size: 1.1rem; color: #7f1d1d; line-height: 1.8; }
+
+        .solution { background: #f0fdf4; padding: 4rem 2rem; }
+        .solution-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+        .solution h2 { font-size: 1.75rem; color: #166534; margin-bottom: 1.5rem; }
+        .solution p { font-size: 1.1rem; color: #15803d; line-height: 1.8; }
+
+        .features { padding: 5rem 2rem; background: #f8fafc; }
+        .features-inner { max-width: 1100px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2.25rem; margin-bottom: 3rem; color: #0f172a; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .feature-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e293b; }
+        .feature-card p { color: #64748b; font-size: 0.95rem; line-height: 1.7; }
+
+        .how-it-works { padding: 5rem 2rem; }
+        .how-inner { max-width: 900px; margin: 0 auto; }
+        .how-it-works h2 { text-align: center; font-size: 2.25rem; margin-bottom: 3rem; color: #0f172a; }
+        .steps { display: flex; flex-direction: column; gap: 2rem; }
+        .step { display: flex; align-items: flex-start; gap: 1.5rem; }
+        .step-number { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem; flex-shrink: 0; }
+        .step-content h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #1e293b; }
+        .step-content p { color: #64748b; font-size: 0.95rem; }
+
+        .sample { padding: 5rem 2rem; background: #f8fafc; }
+        .sample-inner { max-width: 900px; margin: 0 auto; }
+        .sample h2 { text-align: center; font-size: 2.25rem; margin-bottom: 1rem; color: #0f172a; }
+        .sample-subtitle { text-align: center; color: #64748b; margin-bottom: 2rem; }
+        .sample-box { background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); border: 1px solid #e2e8f0; font-size: 0.9rem; line-height: 1.8; }
+        .sample-box h4 { color: #3b82f6; margin: 1.5rem 0 0.75rem; font-size: 1rem; }
+        .sample-box h4:first-child { margin-top: 0; }
+
+        .pricing { padding: 5rem 2rem; text-align: center; }
+        .pricing h2 { font-size: 2.25rem; margin-bottom: 1rem; color: #0f172a; }
+        .pricing-subtitle { color: #64748b; margin-bottom: 3rem; font-size: 1.1rem; }
+        .pricing-card { max-width: 400px; margin: 0 auto; background: white; border-radius: 20px; padding: 3rem 2rem; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); border: 2px solid #3b82f6; }
+        .price { font-size: 4rem; font-weight: 800; color: #1e293b; }
+        .price span { font-size: 1.5rem; color: #64748b; }
+        .price-desc { color: #64748b; margin: 0.5rem 0 2rem; }
+        .pricing-features { text-align: left; margin-bottom: 2rem; }
+        .pricing-features li { padding: 0.5rem 0; color: #475569; list-style: none; display: flex; align-items: center; gap: 0.75rem; }
+        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; }
+        .pricing-cta { display: block; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 1rem 2rem; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .pricing-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4); }
+        .free-trial { margin-top: 1rem; color: #22c55e; font-weight: 600; }
+
+        .testimonials { padding: 5rem 2rem; background: #f8fafc; }
+        .testimonials h2 { text-align: center; font-size: 2.25rem; margin-bottom: 3rem; color: #0f172a; }
+        .testimonials-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .testimonial-card { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); }
+        .testimonial-card p { color: #475569; font-style: italic; margin-bottom: 1.5rem; line-height: 1.7; }
+        .testimonial-author { font-weight: 600; color: #1e293b; }
+        .testimonial-role { font-size: 0.85rem; color: #94a3b8; }
+
+        .faq { padding: 5rem 2rem; }
+        .faq-inner { max-width: 800px; margin: 0 auto; }
+        .faq h2 { text-align: center; font-size: 2.25rem; margin-bottom: 3rem; color: #0f172a; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 1.5rem 0; }
+        .faq-item h3 { font-size: 1.1rem; color: #1e293b; margin-bottom: 0.75rem; }
+        .faq-item p { color: #64748b; font-size: 0.95rem; line-height: 1.7; }
+
+        .cta-section { padding: 5rem 2rem; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); text-align: center; }
+        .cta-section h2 { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .cta-section p { color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 2rem; }
+        .cta-button { display: inline-block; background: white; color: #1d4ed8; padding: 1rem 2.5rem; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
+
+        footer { padding: 3rem 2rem; background: #0f172a; color: #94a3b8; text-align: center; }
+        .footer-links { margin-bottom: 1.5rem; }
+        .footer-links a { color: #94a3b8; text-decoration: none; margin: 0 1rem; transition: color 0.2s; }
+        .footer-links a:hover { color: white; }
+        .footer-social { margin-bottom: 1.5rem; }
+        .footer-social a { color: #94a3b8; text-decoration: none; margin: 0 0.75rem; font-size: 1.5rem; transition: color 0.2s; }
+        .footer-social a:hover { color: white; }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
-            background: #ffffff;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #0f172a;
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 40px;
-        }
-
-        .nav-cta {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            padding: 0.6rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .nav-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1d4ed8;
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            color: #0f172a;
-        }
-
-        .hero h1 span {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: #64748b;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-        }
-
-        .hero-cta {
-            display: inline-block;
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
-        }
-
-        .hero-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-        }
-
-        .hero-sub {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: #94a3b8;
-        }
-
-        /* Problem Section */
-        .problem {
-            background: #fef2f2;
-            padding: 4rem 2rem;
-        }
-
-        .problem-inner {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .problem h2 {
-            font-size: 1.75rem;
-            color: #991b1b;
-            margin-bottom: 1.5rem;
-        }
-
-        .problem p {
-            font-size: 1.1rem;
-            color: #7f1d1d;
-            line-height: 1.8;
-        }
-
-        /* Solution Section */
-        .solution {
-            background: #f0fdf4;
-            padding: 4rem 2rem;
-        }
-
-        .solution-inner {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .solution h2 {
-            font-size: 1.75rem;
-            color: #166534;
-            margin-bottom: 1.5rem;
-        }
-
-        .solution p {
-            font-size: 1.1rem;
-            color: #15803d;
-            line-height: 1.8;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 5rem 2rem;
-            background: #f8fafc;
-        }
-
-        .features-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2.25rem;
-            margin-bottom: 3rem;
-            color: #0f172a;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.75rem;
-            color: #1e293b;
-        }
-
-        .feature-card p {
-            color: #64748b;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* How It Works */
-        .how-it-works {
-            padding: 5rem 2rem;
-        }
-
-        .how-inner {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .how-it-works h2 {
-            text-align: center;
-            font-size: 2.25rem;
-            margin-bottom: 3rem;
-            color: #0f172a;
-        }
-
-        .steps {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .step {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-        }
-
-        .step-number {
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-
-        .step-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: #1e293b;
-        }
-
-        .step-content p {
-            color: #64748b;
-            font-size: 0.95rem;
-        }
-
-        /* Sample Output */
-        .sample {
-            padding: 5rem 2rem;
-            background: #f8fafc;
-        }
-
-        .sample-inner {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .sample h2 {
-            text-align: center;
-            font-size: 2.25rem;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .sample-subtitle {
-            text-align: center;
-            color: #64748b;
-            margin-bottom: 2rem;
-        }
-
-        .sample-box {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid #e2e8f0;
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-
-        .sample-box h4 {
-            color: #3b82f6;
-            margin: 1.5rem 0 0.75rem;
-            font-size: 1rem;
-        }
-
-        .sample-box h4:first-child {
-            margin-top: 0;
-        }
-
-        /* Pricing */
-        .pricing {
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .pricing h2 {
-            font-size: 2.25rem;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .pricing-subtitle {
-            color: #64748b;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-        }
-
-        .pricing-card {
-            max-width: 400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            padding: 3rem 2rem;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-            border: 2px solid #3b82f6;
-        }
-
-        .price {
-            font-size: 4rem;
-            font-weight: 800;
-            color: #1e293b;
-        }
-
-        .price span {
-            font-size: 1.5rem;
-            color: #64748b;
-        }
-
-        .price-desc {
-            color: #64748b;
-            margin: 0.5rem 0 2rem;
-        }
-
-        .pricing-features {
-            text-align: left;
-            margin-bottom: 2rem;
-        }
-
-        .pricing-features li {
-            padding: 0.5rem 0;
-            color: #475569;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .pricing-features li::before {
-            content: "✓";
-            color: #22c55e;
-            font-weight: 700;
-        }
-
-        .pricing-cta {
-            display: block;
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .pricing-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
-        }
-
-        .free-trial {
-            margin-top: 1rem;
-            color: #22c55e;
-            font-weight: 600;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 5rem 2rem;
-            background: #f8fafc;
-        }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2.25rem;
-            margin-bottom: 3rem;
-            color: #0f172a;
-        }
-
-        .testimonials-grid {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .testimonial-card p {
-            color: #475569;
-            font-style: italic;
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: #1e293b;
-        }
-
-        .testimonial-role {
-            font-size: 0.85rem;
-            color: #94a3b8;
-        }
-
-        /* FAQ */
-        .faq {
-            padding: 5rem 2rem;
-        }
-
-        .faq-inner {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq h2 {
-            text-align: center;
-            font-size: 2.25rem;
-            margin-bottom: 3rem;
-            color: #0f172a;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #e2e8f0;
-            padding: 1.5rem 0;
-        }
-
-        .faq-item h3 {
-            font-size: 1.1rem;
-            color: #1e293b;
-            margin-bottom: 0.75rem;
-        }
-
-        .faq-item p {
-            color: #64748b;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 5rem 2rem;
-            background: #0f172a;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            color: white;
-            margin-bottom: 1rem;
-        }
-
-        .cta-section p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-        }
-
-        /* Footer */
-        footer {
-            padding: 3rem 2rem;
-            background: #0f172a;
-            color: #94a3b8;
-            text-align: center;
-        }
-
-        .footer-links {
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .footer-social {
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-social a {
-            color: #94a3b8;
-            text-decoration: none;
-            margin: 0 0.75rem;
-            font-size: 1.5rem;
-            transition: color 0.2s;
-        }
-
-        .footer-social a:hover {
-            color: white;
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            nav {
-                padding: 1rem;
-            }
-
-            .logo img {
-                height: 32px;
-            }
-
-            .nav-cta {
-                padding: 0.5rem 1rem;
-                font-size: 0.85rem;
-            }
-
-            .features h2,
-            .how-it-works h2,
-            .sample h2,
-            .pricing h2,
-            .testimonials h2,
-            .faq h2 {
-                font-size: 1.75rem;
-            }
-
-            .step {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .step-number {
-                margin: 0 auto;
-            }
-
-            .price {
-                font-size: 3rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.75rem;
-            }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            nav { padding: 1rem; }
+            .logo { font-size: 1.25rem; }
+            .nav-cta { padding: 0.5rem 1rem; font-size: 0.85rem; }
+            .features h2, .how-it-works h2, .sample h2, .pricing h2, .testimonials h2, .faq h2 { font-size: 1.75rem; }
+            .step { flex-direction: column; text-align: center; }
+            .step-number { margin: 0 auto; }
+            .price { font-size: 3rem; }
+            .cta-section h2 { font-size: 1.75rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav>
-        <a href="/" class="logo">
-            <img src="logo.png" alt="UPSC Predictor" height="40">
-        </a>
+        <a href="/" class="logo">UPSC<span>Predictor</span></a>
         <a href="https://upsc-predictor.streamlit.app/" class="nav-cta">Try Free →</a>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-badge">🎯 Built from 1,400+ UPSC PYQ Analysis</div>
         <h1>From Today's Newspaper to <span>Tomorrow's Answer Sheet</span></h1>
@@ -682,7 +173,6 @@
         <p class="hero-sub">No credit card required • Instant access</p>
     </section>
 
-    <!-- Problem Section -->
     <section class="problem">
         <div class="problem-inner">
             <h2>😤 The Frustration You Know Too Well</h2>
@@ -690,7 +180,6 @@
         </div>
     </section>
 
-    <!-- Solution Section -->
     <section class="solution">
         <div class="solution-inner">
             <h2>💡 What Toppers Understand</h2>
@@ -698,7 +187,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features">
         <div class="features-inner">
             <h2>What You Get</h2>
@@ -706,38 +194,37 @@
                 <div class="feature-card">
                     <div class="feature-icon">🔀</div>
                     <h3>5+5 Multi-Angle Split</h3>
-                    <p>5 questions from the obvious subject + 5 from cross-subject angles (History, Geography, Economy, Ethics). Because UPSC asks the same topic from multiple GS papers.</p>
+                    <p>5 questions from the obvious subject + 5 from cross-subject angles. Because UPSC asks the same topic from multiple GS papers.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🪤</div>
                     <h3>Real Exam Traps Explained</h3>
-                    <p>"Always", "Only", "All of the above" — UPSC MCQs have patterns. Every question comes with trap explanation so you learn to spot them.</p>
+                    <p>"Always", "Only", "All of the above" — UPSC MCQs have patterns. Every question comes with trap explanation.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📋</div>
                     <h3>Complete Answer Frameworks</h3>
-                    <p>Mains questions include word allocation (Intro 30, Body 180, Conclusion 40), must-include cases & committees, and balanced conclusion templates.</p>
+                    <p>Mains questions include word allocation, must-include cases & committees, and balanced conclusion templates.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚖️</div>
                     <h3>Ethics Case Studies</h3>
-                    <p>Every output includes a GS-IV Ethics case study with stakeholder analysis, ethical dimensions, and decision framework based on the news topic.</p>
+                    <p>Every output includes a GS-IV Ethics case study with stakeholder analysis and decision framework.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📥</div>
                     <h3>Downloadable Output</h3>
-                    <p>Download your practice questions as a text file. Revise offline, share with study groups, or print for mock tests.</p>
+                    <p>Download your practice questions as a text file. Revise offline or print for mock tests.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
                     <h3>Instant Generation</h3>
-                    <p>Get 10 exam-quality questions in under 30 seconds. No waiting for educators to create content from today's news.</p>
+                    <p>Get 10 exam-quality questions in under 30 seconds. No waiting for educators to create content.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
     <section class="how-it-works">
         <div class="how-inner">
             <h2>How It Works</h2>
@@ -746,28 +233,27 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Enter Any Current Affairs Topic</h3>
-                        <p>Copy-paste a headline, type a topic, or describe any news event. Example: "RBI holds repo rate at 6.5%" or "Supreme Court on bulldozer justice"</p>
+                        <p>Copy-paste a headline, type a topic, or describe any news event.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3>AI Analyzes Multi-Subject Angles</h3>
-                        <p>Our AI (trained on 1,400+ UPSC previous year questions) identifies the primary subject and 3-4 cross-subject angles UPSC could test.</p>
+                        <p>Our AI identifies the primary subject and 3-4 cross-subject angles UPSC could test.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Get 10 Exam-Ready Questions</h3>
-                        <p>Receive 5 MCQs (with traps explained) + 5 Mains questions (with complete answer frameworks). Download and practice.</p>
+                        <p>Receive 5 MCQs (with traps explained) + 5 Mains questions (with answer frameworks).</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sample Output -->
     <section class="sample">
         <div class="sample-inner">
             <h2>Sample Output</h2>
@@ -785,22 +271,18 @@
                 <p>1. Governor must give assent to all Money Bills<br>
                 2. Governor can return a Bill only once<br>
                 3. No time limit for Governor to act on Bills</p>
-                <p>Which is correct?<br>(a) 1 and 2 (b) 2 and 3 (c) 1 and 3 (d) All</p>
+                <p>Which is correct? (a) 1 and 2 (b) 2 and 3 (c) 1 and 3 (d) All</p>
                 <p><strong>✓ Answer: (b)</strong><br>
                 <strong>⚠️ Trap:</strong> "must" in Statement 1 — Governor CAN reserve Money Bills for President</p>
 
-                <h4>📝 SAMPLE MAINS (with Framework)</h4>
+                <h4>📝 SAMPLE MAINS</h4>
                 <p><em>"The office of Governor has become a tool for Centre-State confrontation rather than cooperation." Critically examine.</em></p>
-                <p><strong>Answer Framework (250 words):</strong><br>
-                • Intro (30 words): Define Governor's constitutional role under Article 153-162<br>
-                • Body (180 words): Constitutional position, areas of friction, recent examples, Sarkaria view<br>
-                • Conclusion (40 words): Balanced view on discretion vs codification</p>
+                <p><strong>Answer Framework:</strong> Intro (30 words) • Body (180 words) • Conclusion (40 words)</p>
                 <p><strong>Must Include:</strong> Nabam Rebia case, Sarkaria Commission, Article 200</p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
     <section class="pricing">
         <h2>Simple Pricing</h2>
         <p class="pricing-subtitle">Less than your chai ☕</p>
@@ -820,7 +302,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
     <section class="testimonials">
         <h2>What Aspirants Say</h2>
         <div class="testimonials-grid">
@@ -835,53 +316,41 @@
                 <div class="testimonial-role">UPSC Aspirant, Delhi</div>
             </div>
             <div class="testimonial-card">
-                <p>"The Ethics case studies are gold. Every current affairs topic converted into a GS-IV question with proper stakeholder analysis. Worth every rupee."</p>
+                <p>"The Ethics case studies are gold. Every current affairs topic converted into a GS-IV question with proper stakeholder analysis."</p>
                 <div class="testimonial-author">Anjali K.</div>
                 <div class="testimonial-role">UPSC Aspirant, Bangalore</div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq">
         <div class="faq-inner">
             <h2>Frequently Asked Questions</h2>
-            
             <div class="faq-item">
                 <h3>How is this different from regular question banks?</h3>
-                <p>Question banks have pre-made questions on fixed topics. This tool generates fresh questions from ANY current affairs topic you enter — including today's news that no question bank will have.</p>
+                <p>Question banks have pre-made questions on fixed topics. This tool generates fresh questions from ANY current affairs topic you enter — including today's news.</p>
             </div>
-            
             <div class="faq-item">
                 <h3>Are the questions actually UPSC-level?</h3>
-                <p>Yes. Our AI is trained on 1,400+ UPSC Prelims PYQs and 400+ Mains PYQs. It replicates UPSC's question patterns, trap styles, and multi-dimensional testing approach.</p>
+                <p>Yes. Our AI is trained on 1,400+ UPSC Prelims PYQs and 400+ Mains PYQs. It replicates UPSC's question patterns and trap styles.</p>
             </div>
-            
             <div class="faq-item">
                 <h3>Can I get a refund?</h3>
                 <p>No refunds once a query is generated, as AI costs are incurred immediately. That's why we offer 1 FREE query — test the quality before you pay.</p>
             </div>
-            
             <div class="faq-item">
                 <h3>Do credits expire?</h3>
                 <p>No. Your purchased credits never expire. Use them whenever you want.</p>
             </div>
-            
-            <div class="faq-item">
-                <h3>What topics can I enter?</h3>
-                <p>Anything from current affairs: Supreme Court judgments, economic policies, international relations, environmental issues, government schemes, social issues — if it's in the news, enter it.</p>
-            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
         <h2>Start Practicing Smarter Today</h2>
         <p>Turn your newspaper reading into exam-ready practice.</p>
         <a href="https://upsc-predictor.streamlit.app/" class="cta-button">Try 1 Query FREE →</a>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-social">
             <a href="https://www.youtube.com/channel/UCMVxFvBmNwIdLFdq65yqTFg" target="_blank">📺 YouTube</a>
