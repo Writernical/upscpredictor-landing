@@ -54,9 +54,10 @@
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #1e293b; background: #ffffff; }
 
         nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .logo-wrapper { display: flex; flex-direction: column; }
         .logo { font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none; }
         .logo span { color: #3b82f6; }
-        .logo-tagline { font-size: 0.7rem; color: #64748b; font-weight: 400; display: block; margin-top: -2px; }
+        .logo-tagline { font-size: 0.75rem; color: #64748b; font-weight: 400; margin-top: 2px; }
         .logo-tagline a { color: #3b82f6; text-decoration: none; font-weight: 600; }
         .logo-tagline a:hover { text-decoration: underline; }
         .nav-cta { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 0.6rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; }
@@ -173,10 +174,10 @@
 <body>
 
     <nav>
-        <a href="/" class="logo">
-            UPSC<span>Predictor</span>
+        <div class="logo-wrapper">
+            <a href="/" class="logo">UPSC<span>Predictor</span></a>
             <span class="logo-tagline">A product by <a href="https://writernical.com" target="_blank">Writernical</a></span>
-        </a>
+        </div>
         <a href="https://upsc-predictor.streamlit.app/" class="nav-cta">Login / Sign Up →</a>
     </nav>
 
