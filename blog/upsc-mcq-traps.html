@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How UPSC Sets Traps in MCQs: Complete Analysis | UPSC Predictor Blog</title>
+    <meta name="description" content="Decoded from 1,400+ previous year questions. Learn the 7 trap types UPSC uses and how to avoid them in Prelims.">
+    <link rel="canonical" href="https://upscpredictor.in/blog/upsc-mcq-traps.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6135198003737376" crossorigin="anonymous"></script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: #1e293b; background: #f8fafc; }
+        
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none; }
+        .logo span { color: #3b82f6; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links > a { color: #64748b; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        .nav-links > a:hover { color: #3b82f6; }
+        .nav-cta { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white !important; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 600; }
+        
+        .dropdown { position: relative; }
+        .dropdown > a { color: #64748b; text-decoration: none; font-weight: 500; cursor: pointer; }
+        .dropdown > a:hover { color: #3b82f6; }
+        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); min-width: 280px; padding: 0.5rem 0; margin-top: 0.5rem; border: 1px solid #e2e8f0; z-index: 1001; }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu a { display: block; padding: 0.6rem 1rem; color: #475569; text-decoration: none; font-size: 0.9rem; transition: background 0.2s; }
+        .dropdown-menu a:hover { background: #f1f5f9; color: #1d4ed8; }
+        .dropdown-menu .divider { height: 1px; background: #e2e8f0; margin: 0.5rem 0; }
+        @media (max-width: 768px) { .nav-links { display: none; } }
+        
+        .content { max-width: 800px; margin: 0 auto; padding: 7rem 2rem 4rem; }
+        .breadcrumb { font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem; }
+        .breadcrumb a { color: #3b82f6; text-decoration: none; }
+        
+        .article { background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .article-tag { display: inline-block; background: #fef3c7; color: #92400e; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem; }
+        .article h1 { font-size: 2rem; color: #0f172a; margin-bottom: 0.75rem; line-height: 1.3; }
+        .article-meta { color: #94a3b8; font-size: 0.9rem; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0; }
+        .article p { color: #475569; margin-bottom: 1rem; }
+        .article h2 { font-size: 1.5rem; color: #1e40af; margin: 2.5rem 0 1rem; }
+        .article h3 { font-size: 1.1rem; color: #334155; margin: 1.5rem 0 0.75rem; }
+        .article ul, .article ol { margin-left: 1.5rem; color: #475569; margin-bottom: 1rem; }
+        .article li { margin-bottom: 0.5rem; }
+        .article strong { color: #1e293b; }
+        
+        .trap-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 10px; padding: 1.25rem; margin: 1.5rem 0; }
+        .trap-card h4 { color: #991b1b; margin-bottom: 0.5rem; }
+        .trap-card p { color: #7f1d1d; margin-bottom: 0; font-size: 0.95rem; }
+        
+        .example-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; margin: 1.5rem 0; }
+        .example-box h5 { color: #1e40af; margin-bottom: 0.75rem; font-size: 0.95rem; }
+        .example-box p { margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .example-box ul { margin-top: 0.5rem; }
+        
+        .highlight-box { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .highlight-box.warning { background: #fef2f2; border-color: #ef4444; }
+        .highlight-box.info { background: #eff6ff; border-color: #3b82f6; }
+        
+        .cta-box { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 12px; padding: 2rem; text-align: center; color: white; margin-top: 2rem; }
+        .cta-box h4 { margin-bottom: 0.5rem; font-size: 1.25rem; }
+        .cta-box p { opacity: 0.9; margin-bottom: 1rem; }
+        .cta-box a { display: inline-block; background: white; color: #1d4ed8; padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; }
+        
+        .related-samples { background: #f0fdf4; border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
+        .related-samples h4 { color: #166534; margin-bottom: 1rem; }
+        .related-samples a { display: inline-block; background: white; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; margin: 0.25rem; border: 1px solid #86efac; }
+        .related-samples a:hover { background: #f0fdf4; }
+        
+        .ad-container { max-width: 800px; margin: 1.5rem auto; padding: 0 2rem; }
+        .ad-placeholder { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border: 2px dashed #cbd5e1; border-radius: 12px; padding: 1.5rem; text-align: center; color: #94a3b8; font-size: 0.85rem; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+        
+        footer { background: #0f172a; color: #94a3b8; padding: 3rem 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: #94a3b8; text-decoration: none; }
+        footer a:hover { color: white; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">UPSC<span>Predictor</span></a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <div class="dropdown">
+                <a href="/samples/">Samples ▾</a>
+                <div class="dropdown-menu">
+                    <a href="/samples/">📚 All Samples</a>
+                    <div class="divider"></div>
+                    <a href="/samples/census-2027-dnt-tribes.html">Census 2027: DNT Tribes</a>
+                    <a href="/samples/manipur-cm-community-representation.html">Manipur CM Representation</a>
+                    <a href="/samples/vp-dhankhar-resignation.html">VP Resignation</a>
+                    <a href="/samples/us-iran-diplomatic-talks.html">US-Iran Talks</a>
+                    <a href="/samples/india-us-trade-deal-agriculture.html">India-US Trade Deal</a>
+                    <a href="/samples/budget-2026.html">Budget 2026</a>
+                    <a href="/samples/economic-survey-2026.html">Economic Survey 2026</a>
+                    <a href="/samples/new-labour-codes.html">Labour Codes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/blog/">Blog ▾</a>
+                <div class="dropdown-menu">
+                    <a href="/blog/">📝 All Articles</a>
+                    <div class="divider"></div>
+                    <a href="/blog/how-to-use-upsc-predictor.html">How to Use UPSC Predictor</a>
+                    <a href="/blog/upsc-mcq-traps.html">UPSC MCQ Traps Analysis</a>
+                    <a href="/blog/mains-answer-writing.html">Mains Answer Writing</a>
+                    <a href="/blog/current-affairs-strategy.html">Current Affairs Strategy</a>
+                </div>
+            </div>
+            <a href="/faq.html">FAQ</a>
+            <a href="https://t.me/upsc_predictor_bot">Telegram</a>
+            <a href="https://upscpredictor.streamlit.app" class="nav-cta">Try Free →</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="breadcrumb"><a href="/">Home</a> → <a href="/blog/">Blog</a> → UPSC MCQ Traps</div>
+        
+        <article class="article">
+            <span class="article-tag">Strategy</span>
+            <h1>How UPSC Sets Traps in MCQs: A Complete Analysis</h1>
+            <p class="article-meta">10 min read • Analysis from 1,400+ PYQs • Updated February 2026</p>
+            
+            <p>After analyzing 1,400+ UPSC Prelims questions, we've identified the most common trap patterns. Understanding these can boost your score by 15-20 marks.</p>
+
+            <div class="ad-container" style="padding: 0; margin: 1.5rem 0;">
+                <div class="ad-placeholder">📢 Advertisement</div>
+            </div>
+
+            <h2>Trap Type 1: Absolute Words</h2>
+            <p>UPSC loves using absolute words to create wrong options. These words make statements too rigid to be true.</p>
+            
+            <div class="trap-card">
+                <h4>⚠️ Red Flag Words</h4>
+                <p><strong>Always, Never, Only, All, None, Every, Must, Completely, Entirely, Exclusively</strong></p>
+            </div>
+
+            <div class="example-box">
+                <h5>Example</h5>
+                <p><strong>Statement:</strong> "The President must always act on the advice of the Council of Ministers."</p>
+                <p><strong>Why it's wrong:</strong> Article 74 says the President "shall" act on advice, but there are exceptions (returning bills for reconsideration). The word "always" makes it false.</p>
+            </div>
+
+            <div class="highlight-box">
+                <strong>Rule of thumb:</strong> If a statement uses "always" or "never", it's usually wrong. Exceptions exist for almost everything in law and governance.
+            </div>
+
+            <h2>Trap Type 2: Partial Truths</h2>
+            <p>These statements are 90% correct but have one small error that makes them wrong.</p>
+
+            <div class="example-box">
+                <h5>Example</h5>
+                <p><strong>Statement:</strong> "The Comptroller and Auditor General audits all expenditure from the Consolidated Fund of India and states, and reports to the President."</p>
+                <p><strong>The trap:</strong> CAG reports to the President for Union accounts, but to the Governor for state accounts. The statement mixes them up.</p>
+            </div>
+
+            <h2>Trap Type 3: Paired Options</h2>
+            <p>UPSC often creates patterns where options are designed to confuse:</p>
+            <ul>
+                <li><strong>Pattern 1:</strong> Options (a) and (c) correct, (b) and (d) wrong - or vice versa</li>
+                <li><strong>Pattern 2:</strong> "1, 2 and 3" vs "1 and 2 only" vs "2 and 3 only"</li>
+                <li><strong>Pattern 3:</strong> Negatives - "Which is NOT correct?"</li>
+            </ul>
+
+            <div class="highlight-box warning">
+                <strong>Common mistake:</strong> Students often select "All of the above" or "None of the above" reflexively. UPSC uses these as traps - always verify each statement individually.
+            </div>
+
+            <h2>Trap Type 4: Similar-Sounding Terms</h2>
+            <p>Confusing related but different concepts:</p>
+            
+            <div class="example-box">
+                <h5>Commonly Confused Pairs</h5>
+                <ul>
+                    <li>Money Bill vs Finance Bill</li>
+                    <li>Judicial Review vs Judicial Activism</li>
+                    <li>Fundamental Rights vs Directive Principles</li>
+                    <li>Governor's Discretion vs Governor's Individual Judgment</li>
+                    <li>Appropriation Bill vs Vote on Account</li>
+                </ul>
+            </div>
+
+            <h2>Trap Type 5: Constitutional vs Current Position</h2>
+            <p>What the Constitution says vs what actually happens:</p>
+
+            <div class="example-box">
+                <h5>Example</h5>
+                <p><strong>Constitutional position:</strong> "Governor appoints Chief Minister who commands majority in assembly."</p>
+                <p><strong>Current reality:</strong> Governors have sometimes invited leaders without clear majority, asked for floor tests, delayed swearing-in, etc.</p>
+                <p><strong>UPSC trick:</strong> Asking about constitutional provisions while using examples from current controversies.</p>
+            </div>
+
+            <h2>Trap Type 6: Date/Number Traps</h2>
+            <p>Small numerical errors that you might gloss over:</p>
+            <ul>
+                <li>Article numbers (Article 14 vs Article 15)</li>
+                <li>Amendment numbers (42nd vs 44th)</li>
+                <li>Years (1950 vs 1952)</li>
+                <li>Tenure periods (5 years vs 6 years)</li>
+            </ul>
+
+            <h2>Trap Type 7: Negative Questions</h2>
+            <p>"Which is NOT correct?" or "Which statement is FALSE?" - these require extra attention.</p>
+
+            <div class="highlight-box info">
+                <strong>Strategy:</strong> For negative questions, mark each option as T (True) or F (False) on your rough sheet. The odd one out is your answer.
+            </div>
+
+            <h2>How UPSC Predictor Helps</h2>
+            <p>Every MCQ we generate includes:</p>
+            <ul>
+                <li><strong>Trap explanation:</strong> What makes wrong options tempting</li>
+                <li><strong>Key point:</strong> The concept being tested</li>
+                <li><strong>Pattern identification:</strong> Which trap type is used</li>
+            </ul>
+            <p>By practicing with trap-aware questions, you train your brain to spot these patterns in the actual exam.</p>
+
+            <div class="related-samples">
+                <h4>📚 See Trap Analysis in Action</h4>
+                <p>These sample questions show real trap patterns:</p>
+                <a href="/samples/manipur-cm-community-representation.html">Manipur CM (Polity Traps)</a>
+                <a href="/samples/vp-dhankhar-resignation.html">VP Resignation (Constitutional)</a>
+                <a href="/samples/new-labour-codes.html">Labour Codes (Legal)</a>
+                <a href="/samples/economic-survey-2026.html">Economic Survey (Data Traps)</a>
+            </div>
+
+            <div class="cta-box">
+                <h4>Practice trap-aware MCQs</h4>
+                <p>Generate questions with trap explanations on any topic.</p>
+                <a href="https://upscpredictor.streamlit.app">Start Practicing →</a>
+            </div>
+        </article>
+    </div>
+
+    <div class="ad-container">
+        <div class="ad-placeholder">📢 Advertisement</div>
+    </div>
+
+    <footer>
+        <p><a href="/">Home</a> • <a href="/samples/">Samples</a> • <a href="/blog/">Blog</a> • <a href="/faq.html">FAQ</a> • <a href="https://t.me/upsc_predictor_bot">Telegram</a></p>
+        <p style="margin-top: 1rem;">A product by <a href="https://writernical.com">Writernical</a></p>
+        <p>© 2026 UPSC Predictor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
