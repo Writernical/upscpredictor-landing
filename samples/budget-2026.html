@@ -16,7 +16,7 @@
         .logo { font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none; }
         .logo span { color: #3b82f6; }
         .nav-links { display: flex; gap: 2rem; align-items: center; }
-        .nav-links a { color: #64748b; text-decoration: none; font-weight: 500; }
+        .nav-links > a { color: #64748b; text-decoration: none; font-weight: 500; }
         .nav-cta { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white !important; padding: 0.6rem 1.5rem; border-radius: 8px; }
         .content { max-width: 800px; margin: 0 auto; padding: 7rem 2rem 4rem; }
         .breadcrumb { font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem; }
@@ -36,7 +36,23 @@
         /* Ad Container */
         .ad-container { max-width: 800px; margin: 1.5rem auto; padding: 0 1rem; text-align: center; }
         .ad-container ins { display: block; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown > a { color: #64748b; text-decoration: none; font-weight: 500; cursor: pointer; }
+        .dropdown > a:hover { color: #3b82f6; }
+        .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); min-width: 280px; padding: 0.5rem 0; margin-top: 0.5rem; border: 1px solid #e2e8f0; z-index: 1001; }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu a { display: block; padding: 0.6rem 1rem; color: #475569; text-decoration: none; font-size: 0.9rem; transition: background 0.2s; }
+        .dropdown-menu a:hover { background: #f1f5f9; color: #1d4ed8; }
+        .dropdown-menu .divider { height: 1px; background: #e2e8f0; margin: 0.5rem 0; }
+
         @media (max-width: 768px) { .nav-links { display: none; } }
+    
+        /* Ad Placeholder */
+        .ad-container { max-width: 1100px; margin: 1.5rem auto; padding: 0 2rem; }
+        .ad-placeholder { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border: 2px dashed #cbd5e1; border-radius: 12px; padding: 1.5rem; text-align: center; color: #94a3b8; font-size: 0.85rem; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+
     </style>
 </head>
 <body>
@@ -44,8 +60,34 @@
         <a href="/" class="logo">UPSC<span>Predictor</span></a>
         <div class="nav-links">
             <a href="/">Home</a>
-            <a href="/samples/">Samples</a>
-            <a href="https://t.me/upsc_predictor_bot">Telegram Bot</a>
+            <div class="dropdown">
+                <a href="/samples/">Samples ▾</a>
+                <div class="dropdown-menu">
+                    <a href="/samples/">📚 All Samples</a>
+                    <div class="divider"></div>
+                    <a href="/samples/census-2027-dnt-tribes.html">Census 2027: DNT Tribes</a>
+                    <a href="/samples/manipur-cm-community-representation.html">Manipur CM Representation</a>
+                    <a href="/samples/vp-dhankhar-resignation.html">VP Resignation</a>
+                    <a href="/samples/us-iran-diplomatic-talks.html">US-Iran Talks</a>
+                    <a href="/samples/india-us-trade-deal-agriculture.html">India-US Trade Deal</a>
+                    <a href="/samples/budget-2026.html">Budget 2026</a>
+                    <a href="/samples/economic-survey-2026.html">Economic Survey 2026</a>
+                    <a href="/samples/new-labour-codes.html">Labour Codes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/blog/">Blog ▾</a>
+                <div class="dropdown-menu">
+                    <a href="/blog/">📝 All Articles</a>
+                    <div class="divider"></div>
+                    <a href="/blog/how-to-use-upsc-predictor.html">How to Use UPSC Predictor</a>
+                    <a href="/blog/upsc-mcq-traps.html">UPSC MCQ Traps Analysis</a>
+                    <a href="/blog/mains-answer-writing.html">Mains Answer Writing</a>
+                    <a href="/blog/current-affairs-strategy.html">Current Affairs Strategy</a>
+                </div>
+            </div>
+            <a href="/faq.html">FAQ</a>
+            <a href="https://t.me/upsc_predictor_bot">Telegram</a>
             <a href="https://upscpredictor.streamlit.app" class="nav-cta">Try Free →</a>
         </div>
     </nav>
@@ -66,16 +108,10 @@
             </div>
                 </div>
 
-        <!-- Ad Placeholder -->
-        <div class="ad-container">
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6135198003737376"
-                data-ad-slot="auto"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
+            <!-- Ad Placeholder -->
+    <div class="ad-container">
+        <div class="ad-placeholder">📢 Advertisement</div>
+    </div>
 
         <div class="sample-content">
 <strong>SAMPLE MCQ:</strong>
@@ -98,16 +134,10 @@ M1. "Critically analyze the fiscal strategy adopted in Budget 2026, focusing on 
 Must Include: FRBM targets, capital expenditure multiplier, NK Singh Committee recommendations
         </div>
 
-        <!-- Ad Placeholder -->
-        <div class="ad-container">
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-6135198003737376"
-                data-ad-slot="auto"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
+            <!-- Ad Placeholder -->
+    <div class="ad-container">
+        <div class="ad-placeholder">📢 Advertisement</div>
+    </div>
 
         <div class="cta-box">
             <h3>Generate Full Questions on Any Topic</h3>
