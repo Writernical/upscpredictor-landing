@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - UPSC Predictor | Frequently Asked Questions</title>
+    <meta name="description" content="Frequently asked questions about UPSC Predictor - how it works, pricing, credits, and how to use it for UPSC preparation.">
+    <meta name="keywords" content="UPSC Predictor FAQ, UPSC question generator help, UPSC preparation tool, current affairs questions">
+    <link rel="canonical" href="https://upscpredictor.in/faq.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6135198003737376" crossorigin="anonymous"></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.7; color: #1e293b; background: #ffffff; }
+        
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #1e293b; text-decoration: none; }
+        .logo span { color: #3b82f6; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: #64748b; text-decoration: none; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #3b82f6; }
+        .nav-cta { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white !important; padding: 0.6rem 1.5rem; border-radius: 8px; font-weight: 600; }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); }
+
+        .hero { padding: 8rem 2rem 4rem; text-align: center; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #0f172a; }
+        .hero p { font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto; }
+
+        .faq-container { max-width: 800px; margin: 0 auto; padding: 4rem 2rem; }
+        
+        .faq-section { margin-bottom: 3rem; }
+        .faq-section h2 { font-size: 1.5rem; color: #1e40af; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #dbeafe; }
+        
+        .faq-item { background: #f8fafc; border-radius: 12px; margin-bottom: 1rem; overflow: hidden; border: 1px solid #e2e8f0; }
+        .faq-question { padding: 1.25rem 1.5rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
+        .faq-question:hover { background: #f1f5f9; }
+        .faq-question::after { content: '+'; font-size: 1.5rem; color: #3b82f6; font-weight: 300; }
+        .faq-item.active .faq-question::after { content: '−'; }
+        .faq-answer { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: all 0.3s ease; }
+        .faq-item.active .faq-answer { padding: 0 1.5rem 1.5rem; max-height: 500px; }
+        .faq-answer p { color: #475569; margin-bottom: 0.75rem; }
+        .faq-answer ul { margin-left: 1.5rem; color: #475569; }
+        .faq-answer li { margin-bottom: 0.5rem; }
+
+        .cta-box { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 3rem; border-radius: 16px; text-align: center; margin-top: 3rem; }
+        .cta-box h3 { font-size: 1.75rem; margin-bottom: 1rem; }
+        .cta-box p { opacity: 0.9; margin-bottom: 1.5rem; }
+        .cta-box a { display: inline-block; background: white; color: #1d4ed8; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; }
+
+        footer { background: #0f172a; color: white; padding: 3rem 2rem; text-align: center; }
+        footer a { color: #60a5fa; text-decoration: none; }
+        footer p { margin-bottom: 0.5rem; opacity: 0.8; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .faq-container { padding: 2rem 1rem; }
+        }
+    
+        /* Ad Container */
+        .ad-container { max-width: 900px; margin: 1.5rem auto; padding: 0 2rem; text-align: center; }
+        .ad-container ins { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">UPSC <span>Predictor</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="samples.html">Sample Questions</a>
+            <a href="faq.html">FAQ</a>
+            <a href="https://upsc-predictor.streamlit.app" class="nav-cta">Try Free →</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about UPSC Predictor and how it can help your preparation.</p>
+        </section>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6135198003737376"
+            data-ad-slot="auto"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div class="faq-container">
+        
+        <!-- Getting Started -->
+        <div class="faq-section">
+            <h2>🚀 Getting Started</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">What is UPSC Predictor?</div>
+                <div class="faq-answer">
+                    <p>UPSC Predictor is an AI-powered tool that converts any current affairs topic into UPSC-style practice questions. You get:</p>
+                    <ul>
+                        <li>5 Prelims MCQs with trap explanations</li>
+                        <li>5 Mains questions with answer frameworks</li>
+                        <li>Cross-subject angles (same topic from different GS perspectives)</li>
+                        <li>Downloadable text file for offline study</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does it work?</div>
+                <div class="faq-answer">
+                    <p>It's simple - just 3 steps:</p>
+                    <ul>
+                        <li><strong>Step 1:</strong> Enter any current affairs topic (e.g., "Governor delays NEET Bill")</li>
+                        <li><strong>Step 2:</strong> Wait 20-30 seconds while AI generates questions</li>
+                        <li><strong>Step 3:</strong> Get 10 UPSC-style questions with explanations</li>
+                    </ul>
+                    <p>Our AI is trained on 1,400+ UPSC Previous Year Questions to ensure authentic exam-style output.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is there a free trial?</div>
+                <div class="faq-answer">
+                    <p>Yes! Every new user gets <strong>1 FREE credit</strong> (worth ₹12). This lets you generate 10 questions on any topic without paying.</p>
+                    <p>No credit card required. Just sign up and start using.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What topics can I enter?</div>
+                <div class="faq-answer">
+                    <p>Any current affairs topic works! Examples:</p>
+                    <ul>
+                        <li>Governor delays NEET Bill</li>
+                        <li>India-China LAC tensions</li>
+                        <li>RBI digital rupee pilot</li>
+                        <li>Semiconductor manufacturing policy</li>
+                        <li>Climate finance at COP</li>
+                        <li>Supreme Court on electoral bonds</li>
+                    </ul>
+                    <p>The more specific your topic, the better the questions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing & Credits -->
+        <div class="faq-section">
+            <h2>💰 Pricing & Credits</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How much does it cost?</div>
+                <div class="faq-answer">
+                    <p><strong>₹12 per credit</strong> (1 credit = 10 questions)</p>
+                    <p>That's just ₹1.2 per question - cheaper than any coaching material!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I buy credits?</div>
+                <div class="faq-answer">
+                    <p>On the web app:</p>
+                    <ul>
+                        <li>Click "Buy Credits" button</li>
+                        <li>Pay via Razorpay (UPI, cards, netbanking)</li>
+                        <li>Credits added instantly</li>
+                    </ul>
+                    <p>On Telegram:</p>
+                    <ul>
+                        <li>Use /buy command</li>
+                        <li>Click payment link</li>
+                        <li>Use /paid to verify</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I buy credits in bulk?</div>
+                <div class="faq-answer">
+                    <p>Yes! On the payment page, you can select quantity (1-10 credits at a time). Each credit is ₹12 regardless of quantity.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do credits expire?</div>
+                <div class="faq-answer">
+                    <p>No, credits never expire. Use them whenever you want.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="faq-section">
+            <h2>📱 Platforms & Account</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I use it on both web and Telegram?</div>
+                <div class="faq-answer">
+                    <p>Yes! UPSC Predictor is available on:</p>
+                    <ul>
+                        <li><strong>Web:</strong> upscpredictor.in → upsc-predictor.streamlit.app</li>
+                        <li><strong>Telegram:</strong> @upsc_predictor_bot</li>
+                    </ul>
+                    <p>Both have the same features and same pricing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I share credits between web and Telegram?</div>
+                <div class="faq-answer">
+                    <p>Link your accounts to share credits:</p>
+                    <ul>
+                        <li>Open Telegram bot @upsc_predictor_bot</li>
+                        <li>Send /link command</li>
+                        <li>Enter email you use on web app</li>
+                        <li>Verify OTP sent to your email</li>
+                        <li>Done! Credits now sync automatically</li>
+                    </ul>
+                    <p><strong>Why link?</strong> Buy credits once, use on both platforms!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What if I forget my email?</div>
+                <div class="faq-answer">
+                    <p>Use the "Quick Login" feature on the web app. Enter your email and we'll check for any credits associated with it via Razorpay payment records.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Quality -->
+        <div class="faq-section">
+            <h2>📝 Question Quality</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How accurate are the questions?</div>
+                <div class="faq-answer">
+                    <p>Our AI is trained on 1,400+ UPSC Previous Year Questions (PYQs) to ensure:</p>
+                    <ul>
+                        <li>Authentic UPSC language and framing</li>
+                        <li>Real trap patterns (absolute words, paired options, etc.)</li>
+                        <li>Proper difficulty level</li>
+                        <li>Accurate facts (verified against reliable sources)</li>
+                    </ul>
+                    <p>However, always cross-verify critical facts with standard textbooks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the 5+5 split?</div>
+                <div class="faq-answer">
+                    <p>Every query generates 10 questions with a special distribution:</p>
+                    <ul>
+                        <li><strong>5 Primary questions:</strong> From the obvious subject angle</li>
+                        <li><strong>5 Cross-subject questions:</strong> Same topic from different GS papers</li>
+                    </ul>
+                    <p>This teaches you how UPSC asks the same news from History, Geography, Polity, Economy, Ethics angles!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are "trap explanations"?</div>
+                <div class="faq-answer">
+                    <p>Every MCQ includes an explanation of how UPSC sets traps:</p>
+                    <ul>
+                        <li><strong>Absolute words:</strong> "always", "never", "only" are usually wrong</li>
+                        <li><strong>Paired options:</strong> (a) and (c) correct, (b) and (d) wrong patterns</li>
+                        <li><strong>Partial truths:</strong> Statements that are 90% correct but 10% wrong</li>
+                        <li><strong>Current vs constitutional:</strong> Mixing de facto with de jure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are "answer frameworks" in Mains questions?</div>
+                <div class="faq-answer">
+                    <p>Each Mains question includes a structured approach:</p>
+                    <ul>
+                        <li><strong>Introduction:</strong> How to open (30-40 words)</li>
+                        <li><strong>Body:</strong> Key points to cover (150-180 words)</li>
+                        <li><strong>Conclusion:</strong> How to end (balanced, forward-looking)</li>
+                        <li><strong>Must Include:</strong> Cases, committees, articles to mention</li>
+                        <li><strong>Avoid:</strong> Common mistakes to skip</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical -->
+        <div class="faq-section">
+            <h2>🔧 Technical</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Why does generation take 20-30 seconds?</div>
+                <div class="faq-answer">
+                    <p>Quality takes time! Our AI:</p>
+                    <ul>
+                        <li>Analyzes the topic from multiple angles</li>
+                        <li>Generates authentic UPSC-style questions</li>
+                        <li>Adds trap explanations</li>
+                        <li>Creates answer frameworks</li>
+                        <li>Verifies cross-subject connections</li>
+                    </ul>
+                    <p>This isn't a simple copy-paste - it's intelligent question generation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I download the questions?</div>
+                <div class="faq-answer">
+                    <p>Yes!</p>
+                    <ul>
+                        <li><strong>Web app:</strong> Copy-paste or print the output</li>
+                        <li><strong>Telegram:</strong> Automatically sends a downloadable .txt file</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data secure?</div>
+                <div class="faq-answer">
+                    <p>Yes. We only store:</p>
+                    <ul>
+                        <li>Your email (for login)</li>
+                        <li>Credit balance</li>
+                        <li>Query count</li>
+                    </ul>
+                    <p>We do NOT store the topics you enter or the questions generated. Payments are processed securely via Razorpay.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support -->
+        <div class="faq-section">
+            <h2>🆘 Support</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I contact support?</div>
+                <div class="faq-answer">
+                    <p>Reach us via:</p>
+                    <ul>
+                        <li><strong>Telegram:</strong> @writernical</li>
+                        <li><strong>Email:</strong> writernical@gmail.com</li>
+                    </ul>
+                    <p>We typically respond within 24 hours.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">I paid but didn't get credits. What do I do?</div>
+                <div class="faq-answer">
+                    <p>Try these steps:</p>
+                    <ul>
+                        <li>Use "Quick Login" on web app with your payment email</li>
+                        <li>On Telegram, use /link with your email, then /paid</li>
+                        <li>Wait 5 minutes and try again</li>
+                        <li>If still not working, contact @writernical with payment screenshot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I get a refund?</div>
+                <div class="faq-answer">
+                    <p>Due to the nature of digital services, we generally don't offer refunds for used credits. However, if you face genuine technical issues, contact us and we'll resolve it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h3>Still have questions?</h3>
+            <p>Try the tool for free and see for yourself!</p>
+            <a href="https://upsc-predictor.streamlit.app">Try 1 Query FREE →</a>
+        </div>
+
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6135198003737376"
+            data-ad-slot="auto"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> • <a href="blog.html">Blog</a> • <a href="samples.html">Sample Questions</a> • <a href="faq.html">FAQ</a></p>
+        <p style="margin-top: 1rem;">A product by <a href="https://writernical.com">Writernical</a></p>
+        <p>© 2026 UPSC Predictor. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
