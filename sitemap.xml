@@ -1,109 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Main Pages -->
-    <url>
-        <loc>https://upscpredictor.in/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/faq.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Samples Gallery -->
-    <url>
-        <loc>https://upscpredictor.in/samples/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Individual Sample Pages -->
-    <url>
-        <loc>https://upscpredictor.in/samples/census-2027-dnt-tribes.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/manipur-cm-community-representation.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/vp-dhankhar-resignation.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/us-iran-diplomatic-talks.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/india-us-trade-deal-agriculture.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/budget-2026.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/economic-survey-2026.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/samples/new-labour-codes.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Blog Index -->
-    <url>
-        <loc>https://upscpredictor.in/blog/</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Individual Blog Articles -->
-    <url>
-        <loc>https://upscpredictor.in/blog/how-to-use-upsc-predictor.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/blog/upsc-mcq-traps.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/blog/mains-answer-writing.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscpredictor.in/blog/current-affairs-strategy.html</loc>
-        <lastmod>2026-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://upscpredictor.in/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Samples Index -->
+  <url>
+    <loc>https://upscpredictor.in/samples/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Sample Pages -->
+  <url>
+    <loc>https://upscpredictor.in/samples/census-2027-dnt-tribes.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/budget-2026.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/economic-survey-2026.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/india-us-trade-deal-agriculture.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/manipur-cm-community-representation.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/new-labour-codes.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/us-iran-diplomatic-talks.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://upscpredictor.in/samples/vp-dhankhar-resignation.html</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://upscpredictor.in/faq.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Page -->
+  <url>
+    <loc>https://upscpredictor.in/blog.html</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
